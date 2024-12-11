@@ -127,6 +127,9 @@
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
+                <a href="{{ route('hello.index') }}" class="underline">Hello</a>
+                <a href = "{{route('hello.index', ['name'=>'tom'])}}" class="underline">Hello2</a>
+                <a href = "/hello/tom" class="underline">Hello3</a>
             </div>
         </div>
     </body>
